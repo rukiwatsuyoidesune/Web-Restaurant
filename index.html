@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soto Ayam Rajawali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100px;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fc8406;
+            padding: 10px 20px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .title-container img {
+            width: 50px; 
+            height: 50px;
+        }
+
+        .title h1 {
+            color: #ed3419;
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 
+                -1px -1px 0 white,  
+                 1px -1px 0 white,
+                -1px  1px 0 white,
+                 1px  1px 0 white;
+        }
+
+        .title p {
+            color: rgb(0, 72, 255);
+            font-size: 24px;
+            font-weight: 750;
+            margin: 0;
+            text-shadow: 
+                -1px -1px 0 white,  
+                 1px -1px 0 white,
+                -1px  1px 0 white,
+                 1px  1px 0 white;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-right: 21px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .home {
+            height: fit-content;
+            text-align: center;
+            position: relative;
+        }
+
+        .home video {
+            width: 100%;
+            z-index: 1;
+        }
+
+        
+
+        .menu {
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-card .content {
+            padding: 20px;
+        }
+
+        .menu-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .menu-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .additional {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+
+        .contact {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="title-container">
+        <img src="assets/img/rajawali.png" alt="Logo">
+        <div class="title">
+            <h1>Soto Ayam Rajawali Bu Mar</h1>
+            <p>Khas Bojonegoro</p>
+        </div>
+    </div>
+    <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</div>
+
+<section id="home" class="home section">
+    <video muted autoplay loop src="assets/vid/soto-vid.mp4" title="Video"></video>
+</section>
+
+<section id="menu" class="menu section">
+    <h2>Menu</h2>
+    <div class="menu-item">
+        <div class="menu-card">
+            <img src="assets/img/soto-ayam.jpg" alt="Soto Ayam">
+            <div class="content">
+                <h3>Soto Ayam</h3>
+                <p>Soto ayam dengan kuah santan yang nikmat dengan porsi hemat - normal - jumbo.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="assets/img/es-teh.webp" alt="Es Teh">
+            <div class="content">
+                <h3>Es Teh</h3>
+                <p>Es teh manis yang dingin dan menyegarkan.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="assets/img/es-jeruk.webp" alt="Es Teh">
+            <div class="content">
+                <h3>Es Jeruk</h3>
+                <p>Es jeruk dengan perasan jeruk asli.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="additional">
+        <h3>Menu Tambahan</h3>
+        <p>Kami juga menyediakan lauk tambahan seperti jeroan, kepala ayam, kulit ayam, potongan ayam, dan kerupuk.</p>
+    </div>
+</section>
+<section id="contact" class="contact section">
+    <h2>Kontak</h2>
+    <div class="contact-info">
+        <a href="https://wa.me/6282376900919" target="_blank" style="font-size: 20px; color: #25d366;">
+            <i class="fab fa-whatsapp"></i> +62 823-7690-0919
+        </a>
+        <br><br>
+        <a href="https://gofood.co.id/bojonegoro/restaurant/soto-ayam-rajawali-bu-mar-bojonegoro-kota-030c3db9-ba82-4f9c-b44d-ad8f98494476" target="_blank" style="font-size: 20px; color: #fc8406;">
+            <i class="fas fa-utensils"></i> Soto Ayam Rajawali Bu Mar
+        </a>
+        <br><br>
+        <i class="fas fa-map-marker-alt"></i> Jl. Rajawali No.120, Karang Pacar, Kec. Bojonegoro, Kabupaten Bojonegoro, Jawa Timur 62116
+    </div>
+    <div style="margin-top: 20px;">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.231408595246!2d111.8858325!3d-7.1482038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7782271a3dcbdf%3A0x4081984f11cb9f5f!2sSoto%20Ayam%20Bu%20Mar%20Rajawali!5e0!3m2!1sid!2sid!4v1727754994044!5m2!1sid!2sid"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+        <p><i class="fas fa-map-marker-alt"></i> Jalan Mastrip No. 38 Kauman, Ledok Kulon Tiga, Ledok Wetan, Kec. Bojonegoro, Kabupaten Bojonegoro, Jawa Timur 62113</p>
+    <div style="margin-top: 20px;"></div>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.8074916762994!2d111.87353869678951!3d-7.1482453999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77821e4ac0a3ed%3A0x928604f706e2032!2sSoto%20Ayam%20Rajawali%20Bu%20Mar!5e0!3m2!1sid!2sid!4v1727755250474!5m2!1sid!2sid" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+</body>
+</html>
